@@ -18,3 +18,9 @@
     (not (circle? -0.8 +0.8))
     (not (circle? -0.8 -0.8))
 ))
+
+(deftest mc-test
+  (testing "monte-carlo sampling"
+    (let [iter 10000]
+      (println "Pi estimated from" iter"iterations:" (mc-pi iter)))
+))
