@@ -17,6 +17,9 @@
   (let [sample (fn [] (circle? (rand) (rand)))
         measurements (repeatedly iterations sample)
         inside (filter true? measurements)]
+    ; rand returns values in [0.0, 1.0) so we're only
+    ; sampling 1/4 of the unit circle. Therefore we
+    ; must multiply by 4.0 to get A = pi (r=1.0)^2.
     (* 4.0 (/ (count inside) iterations))
   )
 )
