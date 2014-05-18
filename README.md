@@ -2,7 +2,7 @@
 
 A Clojure library designed to calculate pi by various methods.
 
-![Current build status](https://travis-ci.org/rillian/clj-pi.svg?branch=master)
+[![Current build status](https://travis-ci.org/rillian/clj-pi.svg?branch=master)](https://travis-ci.org/rillian/clj-pi)
 
 ## Usage
 
