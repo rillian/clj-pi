@@ -6,7 +6,12 @@ A Clojure library designed to calculate pi by various methods.
 
 ## Usage
 
-FIXME
+Right now there's only one method. Call
+```clojure
+(mc-pi 1.0e6)
+```
+to estimate the value of pi with monte-carlo sampling.
+The single argument is the number of samples to take.
 
 ## License
 
